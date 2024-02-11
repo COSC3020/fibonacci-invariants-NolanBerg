@@ -1,7 +1,7 @@
 const fs = require('fs');
 const jsc = require('jsverify');
 
-const { fib } = require('./fibonacci');
+const { fib } = require('./code.js');
 
 function arraysEqual(arr1, arr2) {
     if (arr1.length !== arr2.length) return false;
