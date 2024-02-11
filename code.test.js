@@ -1,6 +1,5 @@
 const { fib } = require('./code.js');
 
-const fs = require('fs');
 const jsc = require('jsverify');
 
 function arraysEqual(arr1, arr2) {
