@@ -16,6 +16,40 @@ Add your code in `code.js`. Test your new function; I've provided some basic
 testing code that uses [jsverify](https://jsverify.github.io/) in
 `code.test.js`.
 
+RESOURCES USED: Originally coded in python and used ai to convert to js where function takes in number and computes fibonacci array up to that number. Below is python code I made for fibonacci array without testing:
+
+def fibonacci(i, n, arr):
+
+if n == 0:
+
+return [0]
+
+if n == 1:
+
+return [0,1]
+    
+if i <= n:
+
+arr.append(arr[i - 1] + arr[i - 2])
+
+fibonacci(i + 1, n, arr)
+
+return arr
+
+
+increment = 2
+
+number = 7
+
+print(number)
+
+array = [0, 1]
+
+result = fibonacci(increment, number, array)
+
+print(result)
+
+
 ## Invariant
 
 What is a good invariant for your recursive implementation of `fib()`
