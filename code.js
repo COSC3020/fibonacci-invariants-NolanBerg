@@ -12,4 +12,4 @@ function fib(i, n, arr) {
     return arr;
 }
 
-module.exports = {fib};
+module.exports = { fib };
