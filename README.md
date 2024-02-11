@@ -28,3 +28,5 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+At the beginning of each recursive call, the array contains the fibonacci sequence up to i - 1. This invariant is important for the recursive algorithm because the function appends the sum of the last two elements to the array during each call, and makes sure that the array is valid for up to i - 1.
