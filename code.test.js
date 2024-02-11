@@ -1,7 +1,7 @@
 const fs = require('fs');
 const jsc = require('jsverify');
 
-const { fib } = require('./code.js');
+const { fib } = require('./fibonacci');
 
 function arraysEqual(arr1, arr2) {
     if (arr1.length !== arr2.length) return false;
@@ -22,7 +22,7 @@ const fibTest = (n) => {
 };
 
 const test = jsc.forall("nat", function (n) {
-    return arraysEqual(fib(n), fibTest(n));
+    return arraysEqual(fib(2, n, [0, 1]), fibTest(n));
 });
 
 jsc.assert(test);
