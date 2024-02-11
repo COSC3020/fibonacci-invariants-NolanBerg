@@ -1,4 +1,4 @@
-const { fib } = require('./code');
+const { fib } = require('./code.js');
 
 const fs = require('fs');
 const jsc = require('jsverify');
